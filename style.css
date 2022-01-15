@@ -1,0 +1,66 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.full-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.library {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding-top: 50px;
+}
+
+.library-card {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #1c87c9;
+  height: auto;
+  width: 250px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.change-status-button,
+.remove-button {
+  background-color: #1c87c9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+#add-book-button {
+  border: none;
+  border-radius: 5px;
+  background-color: #1c87c9;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+
+.add-book-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.add-book-form {
+  margin-top: 10px;
+  display: none;
+}
+
+#inputted-read {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

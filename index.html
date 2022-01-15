@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Library</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src='script.js' defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class = 'full-page'>
+      <div id = "title-container">
+        <h2>My Personal Library</h2>
+        <h4 style="color:lightgray">Developed by Garrett Andrews</h4>
+      </div>
+      <div class = "add-book-section">
+        <button id = "add-book-button"> Add Book </button>
+      </div>
+      <div class = "add-book-form">
+        <label for = 'inputted-title'>Title:</label>
+        <input type='text' id='inputted-title' name='inputted-title'>
+        <label for = 'inputted-author'>Author:</label>
+        <input type='text' id='inputted-author' name='inputted-author'>
+        <label for = 'inputted-pages'>Pages:</label>
+        <input type='text' id='inputted-pages' name='inputted-pages'>
+        <select id='inputted-read'>
+          <option value= "Read"> Read </option>
+          <option value= "Not Read"> Not Read </option>
+        </select>
+        <button id='submit-button'>Submit</button>
+      </div>
+      <div class = "library">
+      </div>
+    </div>
+  </body>
+</html>
