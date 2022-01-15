@@ -1,3 +1,21 @@
+class Book {
+  constructor(title, author, pages, readStatus) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.readStatus = readStatus;
+  }
+
+  toggleStatus() {
+    if (this.readStatus === "Read") {
+      this.readStatus = "Not Read"
+    } else {
+      this.readStatus = "Read"
+    }
+  }
+}
+
+/* replaced with class syntax above
 function Book(title, author, pages, readStatus) {
   this.title = title;
   this.author = author;
@@ -12,6 +30,7 @@ Book.prototype.toggleStatus = function() {
     this.readStatus = "Read"
   }
 }
+*/
 
 function addBookToLibrary(book, library) {
   library.push(book);
@@ -90,14 +109,6 @@ function closeBookForm() {
 }
 
 
-
-
-
-
-
-
-
-
 let addBookButton = document.getElementById('add-book-button');
 addBookButton.addEventListener('click', () => {
   openBookForm()
@@ -115,8 +126,6 @@ submitButton.addEventListener('click', () => {
   displayLibrary(myLibrary);
   closeBookForm()
 })
-
-
 
 let myLibrary = [];
 
